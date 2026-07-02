@@ -92,3 +92,72 @@ initial begin
 #200 $finish();
 end
 endmodule
+
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 07/02/2026 03:20:36 PM
+// Design Name: 
+// Module Name: register_file_tb
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module register_file_tb();
+//port declaration 
+reg [4:0] Ra;
+reg [4:0] Rb;
+reg [4:0] Rw;
+reg clk;
+reg RegWrite;
+reg [31:0] BusW;
+wire [31:0] BusA;
+wire [31:0] BusB;
+integer i,j,k;
+
+//module instantiation 
+register_file register_file_dut(Ra,Rb,Rw,clk,RegWrite,BusW, BusA, BusB);
+
+//clock generation block
+initial begin 
+clk=1'b0;
+forever #10 clk=~clk;
+end
+
+//write operation 
+initial begin 
+for( i=1; i<32;i= i+1) begin
+Rw=i;
+BusW=i+5;
+RegWrite=1;
+#20;
+end
+end
+
+//read operation for 
+initial begin 
+for(j=1; j<32; j=j+1) begin
+Ra=j;
+Rb= j;
+#20;
+end
+end
+
+//stop simulation 
+initial begin 
+#1000 $finish();
+end
+endmodule
+
