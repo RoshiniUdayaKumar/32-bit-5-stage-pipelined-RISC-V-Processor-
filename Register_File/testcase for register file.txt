@@ -1,0 +1,7 @@
+//testcase for register file
+Testcase-1: Checking if write happens on RegWrite=1 and not on RegWrite=0
+Testcase-2: Checking for simultaneous reads Ra and Rb when RegWrite=0
+Testcase-3:  Checking for simultaneous reads Ra and Rb when RegWrite=1
+Testcase-4: Trying to read from the R0 register
+Testcase-5: Trying to read from registers that hasn't been written 
+ 
