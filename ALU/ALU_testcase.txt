@@ -1,0 +1,12 @@
+//testcase for ALU
+1. Checking boundary cases (check how overflow occurs)- ADD operation 
+2. Check for larger-smaller / smaller- larger / equal values - SUB operation 
+3. Check combinations for values - AND operation 
+4. Zero OR Zero
+Zero OR Number
+Number OR Zero
+All Ones OR Zero  - OR operation
+5. Check for zero flag
+6. Check for SLL, SLR, SRA 
+
+ 
