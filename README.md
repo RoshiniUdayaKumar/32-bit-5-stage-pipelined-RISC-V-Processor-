@@ -6,5 +6,5 @@ Small, very fast memory present inside the CPU.
 It contains CPUs present working data. 
 Any instruction can read the data from the register file or write the data into this register file.
 
-<img width="1157" height="445" alt="image" src="https://github.com/user-attachments/assets/e125b59b-5f7c-450c-a9c8-b7a48e74d364" />
+<img width="1157" height="350" alt="image" src="https://github.com/user-attachments/assets/e125b59b-5f7c-450c-a9c8-b7a48e74d364" />
 
