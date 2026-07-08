@@ -5,4 +5,6 @@ Register block-
 Small, very fast memory present inside the CPU. 
 It contains CPUs present working data. 
 Any instruction can read the data from the register file or write the data into this register file.
-<img width="1227" height="712" alt="image" src="https://github.com/user-attachments/assets/6f04d1c3-9b78-40eb-a26b-2b00b2bc596f" />
+
+<img width="1157" height="445" alt="image" src="https://github.com/user-attachments/assets/e125b59b-5f7c-450c-a9c8-b7a48e74d364" />
+
