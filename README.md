@@ -157,3 +157,48 @@ The Arithmetic Logic Unit (ALU) is a combinational circuit that performs arithme
 </table>
 
 #### ALU CONTROL UNIT
+It is an intermediate block between the main control unit and the ALU.
+The ALU control unit generates the ALU control signal by looking at the ALUOp, funct3, and funct7.
+The function codes decide which operation the ALU needs to perform.
+The ALUOp will decide the instruction layout.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/e26102b6-5ffd-4e09-88a5-2de30931ef2f" width="450">
+</p>
+
+
+`ALUOp` is a 2-bit signal
+<h3>ALUOp Encoding</h3>
+
+<table border="1">
+  <tr>
+    <th>ALUOp</th>
+    <th>Instruction Type</th>
+    <th>ALU Operation</th>
+  </tr>
+  <tr>
+    <td><code>2'b00</code></td>
+    <td>Load (<code>LW</code>), Store (<code>SW</code>), Jump</td>
+    <td>Addition (Address calculation)</td>
+  </tr>
+  <tr>
+    <td><code>2'b01</code></td>
+    <td>Branch (<code>BEQ</code>)</td>
+    <td>Subtraction (Comparison)</td>
+  </tr>
+  <tr>
+    <td><code>2'b10</code></td>
+    <td>R-type </td>
+    <td>Operation determined by <code>funct3</code> and <code>funct7</code></td>
+  </tr>
+  <tr>
+    <td><code>2'b11</code></td>
+    <td>I-type</td>
+    <td>Operation determined by <code>funct3</code> and <code>funct7</code></td>
+  </tr>
+</table>
+
+`funct3` is a 3-bit signal
+<p align="center">
+<img alt="image" src="https://github.com/user-attachments/assets/7869c54d-0749-4307-9e25-b5690d37c0b1" width="650">
+</p>
