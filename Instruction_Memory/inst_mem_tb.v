@@ -15,7 +15,7 @@ current_pc = 32'd8;
 current_pc = 32'd64;
 #20 current_pc= 32'd80;
 #20 current_pc=32'd92;
-#20 current_pc=32'd508;  //no data is present
+#20 current_pc=32'd508;  //no data is present so it outputs X
 end
 
 initial begin 
