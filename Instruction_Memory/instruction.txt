@@ -1,0 +1,44 @@
+//upload these instructions in venus
+.text
+
+main:
+add   x1, x2, x3
+addi  x3, x2, 10
+sub   x5, x3, x2
+and   x4, x6, x7
+or    x10, x23, x2
+xor   x9, x11, x15
+sll   x16, x14, x2
+srl   x20, x17, x1
+sra   x31, x29, x28
+andi  x30, x2, 40
+ori   x25, x16, 15
+xori  x17, x5, 24
+lw    x5, 8(x8)
+sw    x6, 10(x10)
+sub x10,x23,x1
+add x30,x25,x12
+addi x25,x3,20
+xor x2,x5,x7
+xor x3,x5,x7
+sll x9,x11,x13
+sra x15,x17,x25
+slt x19,x8,x9
+and x29,x2,x3
+andi x29,x2,34
+add x15,x6,x7
+add x17,x9,x8
+addi x23,x27,20
+sub x17,x18,x9
+xor x20,x28,x1
+xori x18,x7,11
+lw x23,10(x11)
+sw x14,31(x22)
+
+loop:
+    beq   x2, x4, loop
+    jal   x13, loop
+
+label:
+beq x31,x2,label
+jal x10,label
