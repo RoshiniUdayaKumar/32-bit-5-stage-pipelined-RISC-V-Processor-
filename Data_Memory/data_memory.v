@@ -31,6 +31,9 @@ module Data_Memory(
     
     //declare the memory 
    reg [31:0] memory [0:63];
+   integer j;
+   //initialize 
+   initial for(j=0; j<64; j=j+1) memory[j]=32'd0;
     
     //write logic
     always@(negedge clk) begin 
@@ -39,10 +42,10 @@ module Data_Memory(
     end
     //read logic 
     always@(posedge clk) begin 
-    if(MemRead==0)
-    read_data<=read_data;  //preserve the old value
+    if(MemRead==1)
+    read_data<=memory[data_mem_addr];  //preserve the old value
     else  
-    read_data<=memory[data_mem_addr];  
+    read_data<=32'd0;  
     
     end
     
