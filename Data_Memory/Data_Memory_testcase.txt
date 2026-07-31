@@ -1,0 +1,8 @@
+//testcase for Data Memory
+1. Verify memory initialization (x when nothing is written into the memory)
+2. Verify single write 
+3. Verify single read 
+4. Verify write on negedge of clk and read on posedge clk
+5. Trying to access out of range memory
+6. Verify read and write when write enable is 0, read enable is 1
+7. Verify read and write when write enable is 1, read enable is 0
