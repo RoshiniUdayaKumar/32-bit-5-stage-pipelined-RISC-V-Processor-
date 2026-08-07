@@ -207,4 +207,6 @@ The ALUOp will decide the instruction layout.
 <img alt="image" src="https://github.com/user-attachments/assets/7869c54d-0749-4307-9e25-b5690d37c0b1" width="650">
 </p>
 
+#### CONTROL UNIT
+
 
