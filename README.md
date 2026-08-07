@@ -6,8 +6,10 @@
   - [Register File](#register-file)
   - [Data Memory](#data-memory)
   - [ALU and ALU Control Unit](#alu)
-  - 
- 
+  - [Control Unit](#control-unit)
+  - [Program Counter](#program-counter)
+  - [Instruction Memory](#instruction-memory)
+  - [Immediate Generator](#immediate-generator)
 - [Control Path](#control-path)
 - [Complete Design Flow](#complete-design-flow)
 - [Result](#result)
@@ -199,6 +201,10 @@ The ALUOp will decide the instruction layout.
 </table>
 
 `funct3` is a 3-bit signal
+
+`funct7` is a 7-bit signal 
 <p align="center">
 <img alt="image" src="https://github.com/user-attachments/assets/7869c54d-0749-4307-9e25-b5690d37c0b1" width="650">
 </p>
+
+
