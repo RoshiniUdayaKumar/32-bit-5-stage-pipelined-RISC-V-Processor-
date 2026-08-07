@@ -210,3 +210,7 @@ The ALUOp will decide the instruction layout.
 #### CONTROL UNIT
 
 
+
+## Complete Design Flow
+
+<img width="877" height="721" alt="MIPS Single Cycle Processor Diagram" src="https://github.com/user-attachments/assets/24c993db-a84f-42a7-bcb2-f5d6414bd492" />
