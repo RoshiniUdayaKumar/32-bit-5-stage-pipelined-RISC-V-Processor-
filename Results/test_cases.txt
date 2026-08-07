@@ -1,0 +1,7 @@
+1. Verify PC starts at address 0
+2. PC value getting update
+3. Verify negative immediate values 
+4. Branch taken/not-taken
+5. Writing to a 0th register 
+6. Verify working of ALU zero flag
+7. Control unit operation 
