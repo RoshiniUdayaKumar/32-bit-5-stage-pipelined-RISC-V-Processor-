@@ -1,0 +1,7 @@
+//testcase for Control Unit
+1. Verify for R-type instructions (ADD, AND, OR, NOR, SUB)
+2. Verify for load instructions (lw)
+3. Verify for store instructions (sw)
+4. Verify for I-type instructions (ADDI, ANDI, ORI)
+5. Verify for branch instructions (beq)
+6. Verify for jump instructions 
