@@ -44,6 +44,6 @@ output reg [31:0] BusB
     //logic for write 
     always @(negedge clk) begin
     if(RegWrite==1 && Rw!=0) //we dont want to write to R0 
-    Reg[Rw]= BusW;
+        Reg[Rw] <= BusW;
     end
 endmodule
