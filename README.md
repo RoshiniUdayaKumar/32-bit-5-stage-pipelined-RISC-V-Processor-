@@ -207,11 +207,49 @@ The ALUOp will decide the instruction layout.
 <img alt="image" src="https://github.com/user-attachments/assets/7869c54d-0749-4307-9e25-b5690d37c0b1" width="650">
 </p>
 
-#### CONTROL UNIT
-
-
-
 ## Complete Design Flow
 
-<img alt="MIPS Single Cycle Processor Diagram" src="https://github.com/user-attachments/assets/e87fc745-0934-40a5-ae85-cb4766d8e645" width="650"/>
+<img alt="image" src="https://github.com/user-attachments/assets/164cefc1-03c5-4c0c-99a9-16104ac5f9ef" width="650" />
+
+---
+## Results
+
+After verifying how each component works/updates for R/I/S/B/J-type instructions, lets evaluate the performance of the single cycle processor. 
+
+The performance is calculated as: CPU Time = Instruction count X Cycles per instruction X clock period 
+
+Instruction count(IC): The number of instructions the program executes. 
+
+Cycles per instruction (CPI): The number of cycles it takes to execute all the instructions. 
+
+For a single-cycle processor, every instruction takes exactly 1 clock cycle to execute. 
+
+Thus, the number of instructions = the number of clock cycles.
+
+Calculating CPI= cycles/instructions 
+
+In our implementation, we have considered 31 instructions. So, 31 clock cycles are required to execute 31 instructions. 
+
+CPI= 31/31 
+
+CPI=1
+
+So, for a single-cycle processor, the CPI will always be 1.
+
+Average CPI=1
+
+---
+
+## Tools Used 
+- Vivado 2018.3 for implementation, verification, and simulation.
+- Venus as a RISC-V assembler
+
+---
+
+## Further Improvements 
+- Converting a single-cycle processor to a 5-stage pipelined processor.
+- Implementing a data forwarding technique to avoid data dependencies.
+- Implementing a hazard detection unit to identify lw/sw instructions.
+- Implementing branch resolution techniques to avoid branch hazards.
+- Comparing the overall performance of a pipelined processor against the single-cycle processor. 
 
